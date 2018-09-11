@@ -1,5 +1,7 @@
 # ghlatest
 
+### **NOTE**: This project is a work in progress! Don't use yet.
+
 This is a tool for downloading the latest release of a package from github and optionally extracting the contents.
 
 ## Installation
