@@ -9,6 +9,12 @@
 # Setup name variables for the package/tool
 NAME := ghlatest
 PKG := github.com/airplanefood/$(NAME)
+TARGETS := $(shell for osarch in \
+               darwin-amd64 \
+               freebsd-386 freebsd-amd64 \
+               linux-386 linux-amd64 linux-arm linux-arm64 \
+               windows-amd64; \
+             do echo "builds/$(NAME)-$$osarch"; done)
 
 # Set any default go build tags
 GO := go
@@ -51,7 +57,7 @@ all: clean build fmt lint test staticcheck vet install ## Runs a clean, build, f
 
 
 .PHONY: release
-release: $(shell cat .buildtargets) ## Build cross-compiled binaries for target architectures
+release: $(TARGETS) ## Build cross-compiled binaries for target architectures
 
 
 AUTHORS: $(wildcard *.go) $(wildcard */*.go) VERSION.txt ## Generate the AUTHORS file from the git log
