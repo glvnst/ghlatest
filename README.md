@@ -14,6 +14,7 @@ TBD This app is written in go and cross-compiled for various common platforms, p
 
 
 ```
+$ ghlatest -h
 NAME:
    ghlatest - Release locator for software on github
 
@@ -26,11 +27,31 @@ VERSION:
 COMMANDS:
      list, l, ls      list available releases
      download, d, dl  download the latest available release
+     json, j          print json doc representing latest release from github api
      help, h          Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
    --help, -h     show help
    --version, -v  print the version
+```
+
+See the help test for each command, for example:
+
+```
+$ ghlatest download -h
+NAME:
+   ghlatest download - download the latest available release
+
+USAGE:
+   ghlatest download [command options] [arguments...]
+
+OPTIONS:
+   --filter value, -f value      Filter release assets with the given regular expression (default: "^")
+   --source, -s                  List/download source zip files instead of released assets
+   --outputpath value, -o value  The name of the file to write to
+   --mode value, -m value        Set the output file's protection mode (ala chmod) (default: "0755")
+   --extract, -x                 Unzip the downloaded file
+   
 ```
 
 ## Changelog
