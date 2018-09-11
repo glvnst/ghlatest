@@ -1,0 +1,8 @@
+builds/ghlatest-darwin-amd64
+builds/ghlatest-freebsd-amd64
+builds/ghlatest-freebsd-386
+builds/ghlatest-linux-arm
+builds/ghlatest-linux-arm64
+builds/ghlatest-linux-amd64
+builds/ghlatest-linux-386
+builds/ghlatest-windows-amd64
