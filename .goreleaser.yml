@@ -34,8 +34,6 @@ archives:
     darwin: macOS
 checksum:
   name_template: 'checksums.txt'
-snapshot:
-  name_template: "{{ .Env.GITHUB_SHA }}"
 changelog:
   sort: asc
   filters:
