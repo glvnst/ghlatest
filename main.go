@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/google/go-github/github"
+	"github.com/google/go-github/v33/github"
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
 )
