@@ -27,10 +27,11 @@ const (
 )
 
 var (
-	// GITCOMMIT is provided by the Makefile & compiler during build time
-	GITCOMMIT string
-	// VERSION is provided by the Makefile & compiler during build time
-	VERSION string
+	// version, commit, date, builtBy are provided by goreleaser during build
+	version = "dev"
+	commit  = "none"
+	date    = "unknown"
+	builtBy = "unknown"
 
 	repoRegexp     = regexp.MustCompile(repoRegexpStr)
 	filenameRegexp = regexp.MustCompile(filenameRegexpStr)
@@ -38,14 +39,14 @@ var (
 
 func init() {
 	cli.VersionPrinter = func(c *cli.Context) {
-		fmt.Printf("version\t%s\nbuild\t%s\n", VERSION, GITCOMMIT)
+		fmt.Printf("version %s, commit %s, built at %s by %s", version, commit, date, builtBy)
 	}
 }
 
 func main() {
 	app := cli.NewApp()
 	app.Name = PROG
-	app.Version = VERSION
+	app.Version = version
 	app.Usage = "Release locator for software on github"
 	app.Flags = []cli.Flag{}
 	app.EnableBashCompletion = true
