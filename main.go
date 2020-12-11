@@ -39,7 +39,7 @@ var (
 
 func init() {
 	cli.VersionPrinter = func(c *cli.Context) {
-		fmt.Printf("version %s, commit %s, built at %s by %s", version, commit, date, builtBy)
+		fmt.Printf("version %s, commit %s, built at %s by %s\n", version, commit, date, builtBy)
 	}
 }
 
