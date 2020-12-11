@@ -56,6 +56,18 @@ OPTIONS:
 
 ## Changelog
 
+### v0.1.4
+
+* release infrastructure updates, minor documentation tweaks
+
+### v0.1.3
+
+* release infrastructure updates, minor documentation tweaks
+
+### v0.1.2
+
+* release infrastructure updates, minor documentation tweaks
+
 ### v0.1.1
 
 * argument change:
