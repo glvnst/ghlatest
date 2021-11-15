@@ -12,7 +12,6 @@ TBD This app is written in go and cross-compiled for various common platforms, p
 
 ## Usage
 
-
 ```
 $ ghlatest -h
 NAME:
@@ -133,9 +132,9 @@ for released files:
 
 `Content-Disposition: attachment; filename=launcher_0.5.0.zip`
 
-See https://golang.org/pkg/mime/multipart/#Part.FileName for how to parse that correctly
+See <https://golang.org/pkg/mime/multipart/#Part.FileName> for how to parse that correctly
 
-See https://tools.ietf.org/html/rfc6266 for the standard "Use of the Content-Disposition Header Field in the Hypertext Transfer Protocol (HTTP)"
+See <https://tools.ietf.org/html/rfc6266> for the standard "Use of the Content-Disposition Header Field in the Hypertext Transfer Protocol (HTTP)"
 
 ### Extraction
 
