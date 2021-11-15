@@ -1,6 +1,6 @@
-# ghlatest
+# WIP: ghlatest
 
-### **NOTE**: This project is not yet ready to use!
+**NOTE**: This project is not yet ready for production use!
 
 This is a tool for downloading the latest release of a package from github and optionally extracting the contents.
 
@@ -11,6 +11,8 @@ TBD This app is written in go and cross-compiled for various common platforms, p
 **Note:** Your system will need to have PKI trust roots of some kind in order to run ghlatest. One common package that provides these on unix systems is called `ca-certificates`.
 
 ## Usage
+
+This is the general help test from the program. Each command has additional help text available, you can access this text with a command-line like: `ghlatest list -h`
 
 ```
 $ ghlatest -h
@@ -54,6 +56,10 @@ OPTIONS:
 ```
 
 ## Changelog
+
+### v0.1.5
+
+* update deps
 
 ### v0.1.4
 
